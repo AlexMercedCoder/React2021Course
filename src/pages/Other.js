@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useDataStore } from "../MoreAppState";
 
 function Other() {
+  const { dataStore, dispatch } = useDataStore();
   const words = ["cheese", "bread", "fun", "woaahhh"];
   return (
     <main>
@@ -13,6 +15,27 @@ function Other() {
           </div>
         );
       })}
+      <button
+        onClick={() => {
+          dispatch({ type: "pink" });
+        }}
+      >
+        Pink
+      </button>
+      <button
+        onClick={() => {
+          dispatch({ type: "blue" });
+        }}
+      >
+        Blue
+      </button>
+      <button
+        onClick={() => {
+          dispatch({ type: "green" });
+        }}
+      >
+        Blue
+      </button>
     </main>
   );
 }
