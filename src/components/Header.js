@@ -1,5 +1,6 @@
-function Header(){
-    return <header>Header</header>
+function Pokemon(props){
+    console.log(props.children)
+    return <div>Pokemon</div>
 }
 
-export default Header
+export default Pokemon
