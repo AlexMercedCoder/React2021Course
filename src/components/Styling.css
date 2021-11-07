@@ -1,0 +1,11 @@
+button {
+    display: block;
+    margin: 20px;
+}
+
+.css {
+    color: white;
+    background-color: red;
+    font-size: 2em;
+    border-radius: 30px;
+}
