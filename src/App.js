@@ -1,12 +1,12 @@
 
-import Styling from "./components/Styling";
+import CustomHooks from "./components/CustomHooks";
 
 
 
 function App() {
   return (
     <div className="App">
-      <Styling/>
+      <CustomHooks/>
     </div>
   );
 }
